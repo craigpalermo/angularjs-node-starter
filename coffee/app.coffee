@@ -7,15 +7,15 @@ App = angular.module('App', ['ngRoute', 'ui.utils']).config([
   # define routes for different views here
   ($routeProvider) ->
     $routeProvider.when("/",
-      templateUrl: "home.html"
+      templateUrl: "/partials/home.html"
       controller:  ""
     ).otherwise(redirectTo: "/")
 ])
 
-App.controller "BodyCtrl", ($rootScope, $cookies,  $scope, $http, $window, $location) ->
+App.controller "BodyCtrl", ($rootScope, $scope, $http, $window, $location) ->
   # this controller applies to entire body
   return
 
-App.run ($rootScope, $cookies, $window, $http, $location, $anchorScroll) ->
+App.run ($rootScope, $window, $http, $location, $anchorScroll) ->
   # this runs once when page loads
   return
