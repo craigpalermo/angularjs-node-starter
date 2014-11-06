@@ -15,7 +15,9 @@
     "stylus": "*",
     "nib": "*",
     "bower": "*",
-    "bower-installer": "*"
+    "bower-installer": "*",
+    "coffee-script": "*",
+    "express-coffee": "git://github.com/vangie/express-coffee.git#0.0.10"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install && ./node_modules/bower-installer/bower-installer.js"
