@@ -8,7 +8,7 @@
     "$routeProvider", "$locationProvider", function($routeProvider) {
       return $routeProvider.when("/", {
         templateUrl: "/partials/home.html",
-        controller: ""
+        controller: "BodyCtrl"
       }).otherwise({
         redirectTo: "/"
       });

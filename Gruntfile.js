@@ -17,7 +17,7 @@ module.exports = function(grunt) {
                 tasks: ['coffee:compile']
             },
             jade: {
-                files: ['jade/**/*.jade'],
+                files: ['views/**/*.jade'],
                 tasks: ['jade:compile']
             },
             stylus: {
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: "jade/",
+                    cwd: "views/",
                     src: ['**/partials/*.jade'],
                     dest: './public/',
                     ext: '.html'

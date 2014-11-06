@@ -13,7 +13,7 @@ compile = (str, path) ->
 app = module.exports = express()
 
 # set up directory paths
-app.set('views', __dirname + '/jade')
+app.set('views', __dirname + '/views')
 app.set('view engine', 'jade')
 
 # stylus middleware
