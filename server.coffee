@@ -30,6 +30,7 @@ app.use(coffee(
 
 app.use(express.static(__dirname + '/public'))
 
+# Begin routes -------------------------------------
 
 # home page
 home = (req, res) ->
@@ -37,6 +38,8 @@ home = (req, res) ->
 
 # Routes
 app.get('/', home)
+
+# End routes -------------------------------------
 
 # listen server on port 3000
 app.listen(process.env.PORT || 3000)
