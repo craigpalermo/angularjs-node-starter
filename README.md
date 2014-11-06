@@ -9,7 +9,8 @@ to do the same.
 
 This project is already set up to serve Jade, Stylus, and CoffeeScript, so
 as you make changes to those files, they'll automatically be reflected as
-soon as you refresh the page.
+soon as you refresh the page (with the exception of Jade partials, which you
+need to recompile manually using the *grunt jade* command).
 
 
 ## Build Scripts
