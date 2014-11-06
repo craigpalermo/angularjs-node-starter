@@ -1,6 +1,7 @@
 *.swp
 *.swo
 *.swn
-/build/vendor
+/public/vendor
 /bower_components
 /node_modules
+/public/stylus/*.css

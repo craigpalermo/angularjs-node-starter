@@ -1,5 +1,5 @@
 {
-  "name": "Switch",
+  "name": "MyApp",
   "version": "0.0.1",
   "private": "true",
   "dependencies": {
@@ -11,6 +11,9 @@
     "grunt-contrib-stylus": "*",
     "grunt-shell": "*",
     "express": "~4.9.7",
+    "jade": "*",
+    "stylus": "*",
+    "nib": "*",
     "bower": "*",
     "bower-installer": "*"
   },

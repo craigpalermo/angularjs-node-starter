@@ -8,7 +8,7 @@ App = angular.module('App', ['ngRoute', 'ui.utils']).config([
   ($routeProvider) ->
     $routeProvider.when("/",
       templateUrl: "/partials/home.html"
-      controller:  ""
+      controller:  "BodyCtrl"
     ).otherwise(redirectTo: "/")
 ])
 

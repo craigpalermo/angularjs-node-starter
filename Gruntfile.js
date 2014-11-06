@@ -25,27 +25,6 @@ module.exports = function(grunt) {
                 tasks: ['stylus:compile']
             }
         },
-        /* select coffee files to compile */
-        coffee: {
-            compile: {
-                options: {
-                    join: true
-                },
-                files: [{
-                    expand: true,
-                    cwd: "coffee/",
-                    src: ['**/*.coffee'],
-                    dest: './build/js/',
-                    ext: '.js'
-                },{
-                    expand: true,
-                    cwd: "coffee/",
-                    src: ['server.coffee'],
-                    dest: './build/',
-                    ext: '.js'
-                }]
-            }
-        },
         /* select jade files to compile */
         jade: {
             compile: {
@@ -55,31 +34,13 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: "jade/",
-                    src: ['index.jade'],
-                    dest: './build/',
-                    ext: '.html'
-                },{
-                    expand: true,
-                    cwd: "jade/",
                     src: ['**/partials/*.jade'],
-                    dest: './build/',
+                    dest: './public/',
                     ext: '.html'
-                }]
-            }
-        },
-        /* select stylus files to compile */
-        stylus: {
-            compile: {
-                files: [{
-                    expand: true,
-                    cwd: "stylus/",
-                    src: ['**/*.styl'],
-                    dest: './build/css/',
-                    ext: '.css'
                 }]
             }
         }
     });
 
-    grunt.registerTask('build', ['jade', 'coffee', 'stylus'])
+    grunt.registerTask('build', ['jade'])
 };
