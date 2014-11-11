@@ -12,6 +12,21 @@ as you make changes to those files, they'll automatically be reflected as
 soon as you refresh the page (with the exception of Jade partials, which you
 need to recompile manually using the *grunt jade* command).
 
+## Getting Set Up
+Run these commands to get things set up:
+
+```
+> sudo apt-get install nodejs
+> sudo apt-get install npm
+> sudo npm install
+> sudo npm install -g grunt-cli
+> sudo ln -s /usr/bin/nodejs /usr/bin/node
+> sudo grunt build
+> sudo npm install -g coffee-script
+> sudo npm install -g bower bower-installer
+> bower install
+> bower-installer
+```
 
 ## Build Scripts
 Since NodeJS middlware handles the heavy lifting for comipiling the stuff
@@ -22,26 +37,11 @@ to HTML for AngularJS to use to populate views.
 > grunt jade
 ```
 
-
-## Getting Set Up
-Run these commands to get things set up:
-
-```
-> sudo npm install
-```
-
 ## Start Your Server
 At this point, you should be able to run
 
 ```
 > coffee server.coffee
-```
-
-If that doesn't work, install CoffeeScript globally by running and 
-starting your server again.
-
-```
-> sudo npm install -g coffee-script
 ```
 
 If you don't see any output in the terminal, that means the server is probably
